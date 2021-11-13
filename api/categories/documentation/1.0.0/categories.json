@@ -529,6 +529,48 @@
           "description": {
             "type": "string"
           },
+          "products": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "picture"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "picture": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "integer"
+                },
+                "stock": {
+                  "type": "integer"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -545,6 +587,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

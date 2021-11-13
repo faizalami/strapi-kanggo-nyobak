@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "Products"
+    "name": "Products",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -35,6 +36,7 @@
       "type": "integer"
     },
     "category": {
+      "via": "products",
       "model": "categories"
     }
   }
