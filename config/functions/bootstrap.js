@@ -21,7 +21,7 @@ const setDefaultPermissions = async () => {
   const role = await findPublicRole();
   const permissions = await strapi
     .query("permission", "users-permissions")
-    .find({ type: "application", role: role.id });
+    .find({ type_in: ["application", "upload"], role: role.id });
   await Promise.all(
     permissions.map(p =>
       strapi
